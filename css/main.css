@@ -1,0 +1,353 @@
+/* FUENTES: importadas desde https://fonts.google.com/ (Playfair Display + Lato) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap');
+
+/* COLORES: degradados tomados de https://uigradients.com/
+   - Koko Caramel  -> #D1913C a #FFD194
+   - Coffee Gold   -> #554023 a #c99846
+   - Light Orange  -> #FFB75E a #ED8F03
+   Colores sólidos de apoyo:
+   - Café oscuro (texto)  #3b2a14
+   - Ocre oscuro          #9c5a12
+   - Crema (fondo)        #fbf4e8 */
+
+/* todo proyecto comienza con */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fbf4e8;
+    font-family: "Lato", sans-serif;
+    color: #3b1419;
+}
+
+/* ===================== NAV ===================== */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    /* uiGradients: Coffee Gold */
+    background: #ED213A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logo {
+    width: 140px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-link {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 10px 15px;
+}
+
+/* ===================== HEADER (HERO) ===================== */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    /* uiGradients: Koko Caramel */
+    background: #fffbd5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b20a2c, #fffbd5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.hero-text {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.hero-tag {
+    color: #5f0624;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    color: #3b2a14;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-p {
+    color: #3b2a14;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 500px;
+    border: 6px solid #554023;
+}
+
+/* ===================== BOTONES ===================== */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    color: #3b2a14;
+    font-weight: 900;
+    border: 2px solid #3b2a14;
+    /* uiGradients: Light Orange */
+    background: #ED8F03;
+    background: -webkit-linear-gradient(to right, #FFB75E, #ED8F03);
+    background: linear-gradient(to right, #FFB75E, #ED8F03);
+}
+
+.btn-dark {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 15px;
+    /* uiGradients: Coffee Gold */
+    background: #554023;
+    background: -webkit-linear-gradient(to right, #c99846, #554023);
+    background: linear-gradient(to right, #c99846, #554023);
+}
+
+/* ===================== SECCIONES ===================== */
+.section {
+    padding: 50px 20px;
+}
+
+.section-dark {
+    padding: 50px 20px;
+    /* uiGradients: Coffee Gold */
+    background: #554023;
+    background: -webkit-linear-gradient(to right, #554023, #c99846);
+    background: linear-gradient(to right, #554023, #c99846);
+}
+
+.section-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #9c5a12;
+}
+
+.section-title-light {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #FFD194;
+}
+
+.section-p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 10px 0 30px;
+}
+
+.section-p-light {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 10px 0 30px;
+}
+
+/* ===================== TARJETAS ===================== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 280px;
+    margin: 15px;
+    padding: 20px;
+    background: #ffffff;
+    border: 2px solid #D1913C;
+    box-sizing: border-box;
+}
+
+.card-img {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.card-p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.discount {
+    display: inline-block;
+    padding: 5px 12px;
+    color: #3b2a14;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    /* uiGradients: Light Orange */
+    background: #ED8F03;
+    background: -webkit-linear-gradient(to right, #FFB75E, #ED8F03);
+    background: linear-gradient(to right, #FFB75E, #ED8F03);
+}
+
+.price-old {
+    color: #8a7a66;
+    font-size: 0.95rem;
+}
+
+.price-new {
+    color: #9c5a12;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+/* Tarjetas de eventos */
+.event-card {
+    width: 100%;
+    max-width: 320px;
+    margin: 15px;
+    padding: 20px;
+    background: #ffffff;
+    border: 4px solid #FFD194;
+}
+
+.event-date {
+    color: #b86e0a;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.list {
+    margin: 10px 0 10px 20px;
+    font-size: 0.95rem;
+}
+
+/* ===================== CATEGORÍAS (descuentos.html) ===================== */
+.category-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    color: #554023;
+    margin-top: 30px;
+}
+
+/* ===================== EVENTO GRANDE (eventos.html) ===================== */
+.event-big {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.event-big-img {
+    width: 100%;
+    max-width: 325px;
+    margin: 15px;
+    border: 6px solid #D1913C;
+    height: 400px;
+    object-fit: cover;
+    box-sizing: border-box;
+
+}
+
+.event-big-text {
+    width: 100%;
+    max-width: 480px;
+    margin: 15px;
+}
+
+/* ===================== FORMULARIO ===================== */
+.subscribe {
+    padding: 50px 20px;
+    /* uiGradients: Koko Caramel */
+    background: #D1913C;
+    background: -webkit-linear-gradient(to right, #D1913C, #FFD194);
+    background: linear-gradient(to right, #D1913C, #FFD194);
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    background: #ffffff;
+    border: 2px solid #554023;
+}
+
+.form-label {
+    font-weight: 700;
+    margin: 15px 0 5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    border: 2px solid #c99846;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1.1rem;
+    font-family: "Lato", sans-serif;
+    border: 2px solid #3b2a14;
+    /* uiGradients: Coffee Gold */
+    background: #554023;
+    background: -webkit-linear-gradient(to right, #c99846, #554023);
+    background: linear-gradient(to right, #c99846, #554023);
+}
+
+/* ===================== PIE DE PÁGINA ===================== */
+.footer {
+    padding: 30px 20px;
+    text-align: center;
+    /* uiGradients: Coffee Gold */
+    background: #554023;
+    background: -webkit-linear-gradient(to right, #c99846, #554023);
+    background: linear-gradient(to right, #c99846, #554023);
+}
+
+.footer-p {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
